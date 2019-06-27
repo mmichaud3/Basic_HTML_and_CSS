@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Michael Michael</title>
+    <link rel="stylesheet" type="text/css" href="./portfolio.css">
+    <link href='https://fonts.googleapis.com/css?family=Crushed' rel='stylesheet'>
+</head>
+
+<!--Body-->
+<body class="background">
+
+<!--Nav bar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <!--Home-->
+            <br> <!--Breaks inserted to add space between navbar and first heading-->
+            <br>
+
+    <!--Video-->
+            <div id="Home">
+                    <video autoplay muted loop id="Working_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+                        <source src="working.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+            </div>
+    <!--Video text-->
+            <div class="Video_Text">
+                <h1 style="color: white;font-weight: normal;">Michael Michaud's Portfolio</h1>
+                        <p>
+                            <strong>
+                                    <center>
+                                        <q>Reality leaves a lot to the Imagination</q>
+                                        <br>-John Lennon<br>
+                                        <br>
+                                        Hi there! My name is Michael.  You have found my portfolio website.  Here I will tell you a little bit about myself.<br>
+                                        <br>Thanks for stopping by!
+                                    </center>
+                            </strong>
+                        </p>
+            </div>
+
+            <!--About section-->
+            <div class="Row" id="About">
+                    <div class="Column_2"> <!--Left column-->
+                        <img src="./Seattle.jpg" alt="Seattle">
+                    </div>
+
+                    <div class="Column_1"> <!--Right column-->
+                        <h1>About</h1>
+                                <p>Currently I am a full time student in <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Development Boot Camp while living in Seattle, WA.<br><br>I am being trained in the following programming languages: HTML, CSS, JavaScript, SQL, C# and more.<br><br>I am also a glass artist and an avid distance runner! I am always looking to learn more and get involved with projects. <a href="#Contact"> Contact</a> me below! </p>
+
+                    </div>
+            </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+                <div class="Column_1">  <!--Left Column-->
+                    <h1>GitHub</h1>
+                        <p>Please take a moment to check out my coding projects on my GitHub profile here:<br>
+                        <center><a href="https://github.com/mmichaud3?tab=projects" target="_blank">Michael Michaud's GitHub</a></center></p>
+                </div>
+
+                <div class="Column_2">  <!--Right Column-->
+                        <a href="https://github.com/mmichaud3?tab=projects" target="_blank"><img src="./images/GitHub.png" alt="GitHub"></a>
+                </div>
+        </div>
+
+    <!--Contact section-->
+            <div class="Row" id="Contact">
+                <div class="Column_3">  <!--Contact image, Left column--> 
+                        <img src="./images/message.jpg" alt="Message_Image">
+                </div>
+
+                <div class="Column_1">  <!--Contact form, right "column"-->
+                       <center> <h2>Contact</h2></center>
+                                <form action="" method="GET">  <!-- This specifies where to send the form data and how; it is left blank --> 
+                                        <label>Name:</label>
+                                            <input type="text" placeholder="Please enter your name here">
+                                        <label>Email:</label>
+                                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                                        <label>Message:</label>
+                                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                                            <input type="submit" value="Submit">
+                                </form>
+
+                </div>
+
+            </div>
+
+            <!--Footer section-->
+
+            <footer>
+                    <p>
+                        <center>Author: Michael Michaud</center>
+                    </p>
+            </footer>
+                    
+    
+</body>
+</html>
