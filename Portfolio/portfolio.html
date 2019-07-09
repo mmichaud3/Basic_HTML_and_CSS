@@ -7,6 +7,7 @@
     <title>Michael Michael</title>
     <link rel="stylesheet" type="text/css" href="./portfolio.css">
     <link href='https://fonts.googleapis.com/css?family=Crushed' rel='stylesheet'>
+    
 </head>
 
 <!--Body-->
@@ -68,18 +69,19 @@
                 </div>
 
                 <div class="Column_2">  <!--Right Column-->
-                        <a href="https://github.com/mmichaud3?tab=projects" target="_blank"><img src="./images/GitHub.png" alt="GitHub"></a>
+                        <a href="https://github.com/mmichaud3?tab=projects" target="_blank"><img src="./GitHub.png" alt="GitHub"></a>
                 </div>
         </div>
 
     <!--Contact section-->
             <div class="Row" id="Contact">
                 <div class="Column_3">  <!--Contact image, Left column--> 
-                        <img src="./images/message.jpg" alt="Message_Image">
+                        <img src="./message.jpg" alt="Message_Image">
                 </div>
 
                 <div class="Column_1">  <!--Contact form, right "column"-->
                        <center> <h2>Contact</h2></center>
+                       
                                 <form action="" method="GET">  <!-- This specifies where to send the form data and how; it is left blank --> 
                                         <label>Name:</label>
                                             <input type="text" placeholder="Please enter your name here">
@@ -87,7 +89,9 @@
                                             <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
                                         <label>Message:</label>
                                             <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                                            <input type="submit" value="Submit">
+                                            <button type="button" class="btn btn-secondary popover-dismiss" data-container="body" data-toggle="popover" data-placement="right" data-content="I will be in touch soon!">
+                                                    Submit!
+                                                  </button>
                                 </form>
 
                 </div>
@@ -101,7 +105,14 @@
                         <center>Author: Michael Michaud</center>
                     </p>
             </footer>
-                    
-    
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>      
+            
+            <script>
+                $('.popover-dismiss').popover({
+                 trigger: 'focus'
+                    })
+            </script>
 </body>
 </html>
